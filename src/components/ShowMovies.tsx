@@ -39,8 +39,8 @@ const ShowMovies = () => {
     <>
       <main className="movieContainer">
         {Object.keys(data).map((item) => (
-          <div className="movie">
-            <h2 key={data[item].id}>{data[item].title}</h2>
+          <div key={item} className="movie">
+            <h2>{data[item].title}</h2>
             <img
               src={
                 "https://image.tmdb.org/t/p/original/" + data[item].poster_path
@@ -50,7 +50,14 @@ const ShowMovies = () => {
             <span className="movie-price">
               ${(data[item].popularity * 10).toFixed(2)}
             </span>
-            <span className="addcart">Add To Cart</span>
+            <button
+              className="addcart"
+              onClick={() => {
+                console.log("Clicked: ", data[item].title);
+              }}
+            >
+              Add To Cart
+            </button>
           </div>
         ))}
       </main>
