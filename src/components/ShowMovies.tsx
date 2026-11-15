@@ -1,9 +1,16 @@
 import { useEffect, useState } from "react";
 
+interface Movie {
+  id: number | string;
+  title: string;
+  poster_path: string;
+  popularity: number;
+}
+
 const ShowMovies = () => {
-  const [data, setData] = useState([]);
+  const [data, setData] = useState<Movie[]>([]);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+  const [error, setError] = useState<string | null>(null);
 
   const options = {
     method: "GET",
@@ -38,22 +45,20 @@ const ShowMovies = () => {
   return (
     <>
       <main className="movieContainer">
-        {Object.keys(data).map((item) => (
-          <div key={item} className="movie">
-            <h2>{data[item].title}</h2>
+        {data.map((item) => (
+          <div key={item.id} className="movie">
+            <h2>{item.title}</h2>
             <img
-              src={
-                "https://image.tmdb.org/t/p/original/" + data[item].poster_path
-              }
+              src={"https://image.tmdb.org/t/p/original/" + item.poster_path}
               alt=""
             />
             <span className="movie-price">
-              ${(data[item].popularity * 10).toFixed(2)}
+              ${(item.popularity * 10).toFixed(2)}
             </span>
             <button
               className="addcart"
               onClick={() => {
-                console.log("Clicked: ", data[item].title);
+                console.log("Clicked: ", item.title);
               }}
             >
               Add To Cart
