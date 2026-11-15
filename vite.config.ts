@@ -4,6 +4,7 @@ import { defineConfig } from "vite";
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: "/TalentoTech-React/",
   plugins: [react(), babel({ presets: [reactCompilerPreset()] })],
   server: {
     port: 3000,

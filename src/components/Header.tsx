@@ -1,6 +1,7 @@
 import Logo from "../assets/logo.png";
 
 const Header = () => {
+  //const [menuLink, setMenuLink] = useState(0);
 
   return (
     <>
@@ -13,13 +14,13 @@ const Header = () => {
           <label htmlFor="menu-toggle" className="fa-solid fa-bars"></label>
           <ul>
             <li>
-              <a href="/">Home</a>
+              <a href="./index.html">Home</a>
             </li>
             <li>
-              <a href="/contact">Contact</a>
+              <a href="#contact">Contact</a>
             </li>
             <li>
-              <a href="/cart" id="cart-link">
+              <a href="#cart" id="cart-link">
                 <i className="fa-solid fa-cart-shopping"></i>Cart
               </a>
             </li>
@@ -46,6 +47,6 @@ const Header = () => {
       </header>
     </>
   );
-};
+};;
 
 export default Header;
