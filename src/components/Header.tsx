@@ -1,5 +1,6 @@
 import Logo from "../assets/logo.png";
-function Header() {
+
+const Header = () => {
   return (
     <>
       <header className="header">
@@ -14,10 +15,10 @@ function Header() {
               <a href="/">Home</a>
             </li>
             <li>
-              <a href="/">Contact</a>
+              <a href="/contact">Contact</a>
             </li>
             <li>
-              <a href="#cart" id="cart-link">
+              <a href="/cart" id="cart-link">
                 <i className="fa-solid fa-cart-shopping"></i>Cart
               </a>
             </li>
@@ -44,6 +45,6 @@ function Header() {
       </header>
     </>
   );
-}
+};
 
 export default Header;

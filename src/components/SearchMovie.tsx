@@ -1,4 +1,4 @@
-function SearchMovie() {
+const SearchMovie = () => {
   return (
     <>
       <div className="search-movie">
@@ -11,6 +11,6 @@ function SearchMovie() {
       </div>
     </>
   );
-}
+};
 
 export default SearchMovie;

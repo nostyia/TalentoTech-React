@@ -83,9 +83,7 @@ img {
 .navbar li {
   width: 100%;
 }
-.navbar li:last-child {
-  background-color: var(--accent-main);
-}
+
 .navbar li:hover {
   background-color: var(--bg-main);
 }
@@ -100,7 +98,15 @@ img {
   font-size: 1.4rem;
   text-align: center;
 }
-
+.nav-active{
+  background-color: var(--accent-main);
+}
+.main h1 {
+  text-transform: capitalize;
+  word-spacing: 1rem;
+  color: var(--text-main);
+  padding: 2rem;
+}
 .search-movie {
   display: flex;
   justify-content: center;

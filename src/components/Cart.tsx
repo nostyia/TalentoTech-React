@@ -1,4 +1,4 @@
-function Cart() {
+const Cart = () => {
   return (
     <>
       <main id="movie-shelf">
@@ -9,6 +9,6 @@ function Cart() {
       </main>
     </>
   );
-}
+};
 
 export default Cart;
