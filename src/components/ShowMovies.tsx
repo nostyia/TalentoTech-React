@@ -1,3 +1,4 @@
+import "./ShowMovies.css";
 import { useEffect, useState } from "react";
 
 interface Movie {

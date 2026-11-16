@@ -1,0 +1,15 @@
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4rem;
+  background-color: var(--bg-secondary);
+  position: fixed;
+  bottom: 0;
+  z-index: 1000;
+}
+.footer p {
+  color: var(--text-main);
+  font-size: 1.4rem;
+}

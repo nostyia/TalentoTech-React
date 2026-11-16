@@ -1,0 +1,107 @@
+#cart-link i {
+  margin-right: 0.5rem;
+}
+.cart-modal {
+  display: none;
+  flex-direction: column;
+  min-width: 250px;
+  max-width: 50%;
+  color: var(--text-main);
+  background-color: var(--bg-secondary);
+  padding: 2rem;
+  z-index: 999;
+  position: fixed;
+  top: 4rem;
+  right: 0.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 2px 0 var(--text-main);
+  min-height: 200px;
+}
+.cart-modal h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid var(--text-main);
+}
+.cart-modal p {
+  margin-bottom: 2rem;
+}
+.cart-modal ul {
+  margin-bottom: 1rem;
+  min-height: 100px;
+  width: 100%;
+}
+.cart-modal li {
+  font-size: 1.2rem;
+}
+.cart-reset-buy {
+  border-top: 1px solid var(--text-main);
+  padding-top: 1rem;
+  gap: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.cart-reset-buy a {
+  padding: 1rem;
+  background-color: #fff;
+  text-decoration: none;
+  color: var(--bg-main);
+  border-radius: 0.5rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+.total-price {
+  padding: 1rem;
+  background-color: var(--bg-main);
+  text-decoration: none;
+  color: var(--text-main);
+  border-radius: 0.5rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.modalclose {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  font-size: 2rem;
+  color: var(--text-main);
+}
+.cart-modal-ul {
+  list-style: none;
+}
+.cart-item span {
+  display: inline-block;
+  width: 75%;
+}
+.cart-item span:last-child {
+  width: 25%;
+}
+.addcart {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: var(--bg-secondary);
+  z-index: 100;
+  padding: 1rem 2rem 1rem 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: var(--text-main);
+  border-radius: 0 0 0 2rem;
+  border-width: 0;
+  width: 50%;
+  text-align: right;
+  margin: 0;
+}
+.addcart:hover {
+  background-color: var(--accent-main);
+  cursor: pointer;
+}
+
+@media (min-width: 1024px) {
+  .cart-modal {
+    top: 5rem;
+  }
+}

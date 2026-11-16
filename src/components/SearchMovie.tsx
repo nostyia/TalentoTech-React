@@ -1,3 +1,4 @@
+import "./SearchMovie.css";
 const SearchMovie = () => {
   return (
     <>

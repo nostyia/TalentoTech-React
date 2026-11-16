@@ -1,0 +1,49 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: space-around;
+  gap: 4rem;
+  width: 100%;
+  height: 100%;
+  padding: 4rem;
+  color: var(--text-main);
+  font-size: 1.5rem;
+}
+.contact h2 {
+  text-transform: capitalize;
+  word-spacing: 1rem;
+}
+.contact form,
+.contact label,
+.contact input,
+.contact textarea,
+.contact button {
+  display: block;
+  width: 100%;
+  margin: 1rem 0;
+}
+.contact form {
+  padding: 2rem;
+  background-color: var(--bg-secondary);
+  border-radius: 1rem;
+  box-shadow: 0 0 2px 0 var(--text-secondary);
+}
+
+.contact form textarea {
+  field-sizing: content;
+  min-height: 10rem;
+  max-height: 40rem;
+  resize: none;
+}
+.contact form input,
+.contact form button {
+  padding: 1rem 0;
+}
+
+@media (min-width: 1024px) {
+  .contact form {
+    width: 50%;
+    margin: auto;
+  }
+}

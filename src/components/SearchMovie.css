@@ -1,0 +1,44 @@
+.search-movie {
+  display: flex;
+  justify-content: center;
+  padding: 4rem 0;
+  width: 100%;
+  min-height: 30dvh;
+  background: url(/hero-bg-img.png);
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+  margin: 1rem 0;
+}
+.search-movie input {
+  text-align: center;
+  border: 0.4rem solid var(--bg-secondary);
+  border-radius: 2rem;
+  color: var(--bg-main);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  width: 75dvw;
+  padding: 0.5rem;
+}
+.search-movie input:hover {
+  outline: transparent;
+  border: 0.4rem solid var(--accent-main);
+}
+.search-movie input:focus,
+.search-movie input:active {
+  outline: transparent;
+  border: 0.4rem solid var(--accent-main);
+}
+.search-movie input::placeholder {
+  color: var(--bg-main);
+  user-select: none;
+}
+.search-movie input:focus::placeholder,
+.search-movie input:active::placeholder {
+  color: var(--accent-main);
+}
+
+@media (min-width: 769px) {
+  .search-movie input {
+    padding: 1rem;
+  }
+}
