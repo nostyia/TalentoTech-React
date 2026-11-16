@@ -5,6 +5,6 @@
 
 - **HTML**
 - **CSS**
-- **JS** _VANILLA_
+- **JS** React, React-Router
 
 [Githuh Pages](https://nostyia.github.io/TalentoTech-React/)
